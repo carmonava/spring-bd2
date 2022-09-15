@@ -4,6 +4,17 @@ public class Usuario {
 	private String usuario;
 	private String contasena;
 	private Integer idRol;
+	
+	public Usuario() {
+		super();
+	}
+	
+	public Usuario(String usuario, String contasena, Integer idRol) {
+		super();
+		this.usuario = usuario;
+		this.contasena = contasena;
+		this.idRol = idRol;
+	}
 
 	public String getUsuario() {
 		return usuario;
@@ -27,6 +38,11 @@ public class Usuario {
 
 	public void setIdRol(Integer idRol) {
 		this.idRol = idRol;
+	}
+	
+	@Override
+	public String toString() {
+		return "Usuario: " + usuario + ", Constraseña: " + contasena + " idRol " + idRol;
 	}
 
 }

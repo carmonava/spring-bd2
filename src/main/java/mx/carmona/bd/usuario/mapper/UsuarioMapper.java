@@ -15,6 +15,7 @@ public class UsuarioMapper implements RowMapper<Usuario>{
 		usuario.setUsuario(rs.getString(1));
 		usuario.setContasena(rs.getString(2));
 		usuario.setIdRol(rs.getInt(3));
+		System.out.println(usuario + " \t" + rowNum);
 		return usuario;
 	}
 }
