@@ -23,24 +23,4 @@ public class UsuarioImplDao implements UsuarioDao {
 		//return jdbcTemplateQuery();
 	}
 	
-	
-	public List<Usuario> jdbcTemplateQuery(){
-		
-		Usuario u1 = new Usuario("lcarmonan", "1103", 2);
-		Usuario u2 = new Usuario("diana", "1234", 1);
-		Usuario u3 = new Usuario("daniela", "1234", 1);
-		Usuario u4 = new Usuario("yessenia", "1234", 1);
-		Usuario u5 = new Usuario("jaqueline", "1234", 1);
-		
-		List<Usuario> listaUsuarios = new ArrayList<>();
-		listaUsuarios.add(u1);
-		listaUsuarios.add(u2);
-		listaUsuarios.add(u3);
-		listaUsuarios.add(u4);
-		listaUsuarios.add(u5);
-		
-		
-		return listaUsuarios;
-	}
-	
 }

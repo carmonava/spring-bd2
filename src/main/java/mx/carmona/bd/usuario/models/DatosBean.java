@@ -1,6 +1,6 @@
 package mx.carmona.bd.usuario.models;
 
-public class Datos {
+public class DatosBean {
 	private String nombre;
 
 	public String getNombre() {
