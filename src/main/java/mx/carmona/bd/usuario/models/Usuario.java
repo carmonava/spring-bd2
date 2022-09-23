@@ -1,7 +1,7 @@
 package mx.carmona.bd.usuario.models;
 
 public class Usuario {
-	private String usuario;
+	private String nombre;
 	private String contasena;
 	private Integer idRol;
 	
@@ -9,19 +9,19 @@ public class Usuario {
 		super();
 	}
 	
-	public Usuario(String usuario, String contasena, Integer idRol) {
+	public Usuario(String nombre, String contasena, Integer idRol) {
 		super();
-		this.usuario = usuario;
+		this.nombre = nombre;
 		this.contasena = contasena;
 		this.idRol = idRol;
 	}
 
-	public String getUsuario() {
-		return usuario;
+	public String getNombre() {
+		return nombre;
 	}
 
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public String getContasena() {
@@ -42,7 +42,7 @@ public class Usuario {
 	
 	@Override
 	public String toString() {
-		return "Usuario: " + usuario + ", Constraseña: " + contasena + " idRol " + idRol;
+		return "Nombre: " + nombre + ", Constraseña: " + contasena + " idRol " + idRol;
 	}
 
 }
